@@ -1,0 +1,25 @@
+# CryptoLogo Embed Widget
+
+> Embeddable CryptoLogo widgets for any website. Zero dependencies, Shadow DOM isolation, 4 themes (light/dark/sepia/auto).
+
+## Quick Start
+
+Add to any HTML page:
+- Script: <script src="https://cdn.jsdelivr.net/npm/cryptologo-embed@1/dist/embed.min.js"></script>
+
+## Links
+
+- Main site: https://crypto-logo.com
+- Widget docs: https://widget.crypto-logo.com
+- npm: https://www.npmjs.com/package/cryptologo-embed
+- GitHub: https://github.com/dobestan/cryptologo-embed
+- API: https://crypto-logo.com/developers/
+
+## Standalone Widget Family
+
+- [ReadWhitepaper Widget](https://widget.readwhitepaper.com)
+- [VentureInKorea Widget](https://widget.ventureinkorea.com)
+
+## Part of FYIPedia
+
+Open-source developer tools ecosystem — https://fyipedia.com
