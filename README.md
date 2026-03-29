@@ -213,6 +213,17 @@ CryptoLogo provides all 413 cryptocurrency logos with consistent sizing, transpa
 
 Learn more: [CryptoLogo Coin Database](https://crypto-logo.com/) | [CryptoLogo API](https://crypto-logo.com/developers/)
 
+## Embed Widget
+
+Embed [CryptoLogo](https://crypto-logo.com) widgets on any website with [cryptologo-embed](https://widget.crypto-logo.com):
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/cryptologo-embed@1/dist/embed.min.js"></script>
+<div data-cryptologo="entity" data-slug="example"></div>
+```
+
+Zero dependencies · Shadow DOM · 4 themes (light/dark/sepia/auto) · [Widget docs](https://widget.crypto-logo.com)
+
 ## License
 
 MIT License. See [LICENSE](./LICENSE).
