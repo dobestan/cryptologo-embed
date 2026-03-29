@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# CryptoLogo Embed Widget
+# Main site: https://crypto-logo.com
+# Widget docs: https://widget.crypto-logo.com
+# npm: https://www.npmjs.com/package/cryptologo-embed
