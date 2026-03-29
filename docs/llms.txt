@@ -1,21 +1,48 @@
 # CryptoLogo Embed Widget
 
-> Embeddable CryptoLogo widgets for any website. Zero dependencies, Shadow DOM isolation, 4 themes (light/dark/sepia/auto).
+> Crypto logos and brand assets. Embeddable widgets for any website. Zero dependencies, Shadow DOM isolation.
 
 ## Quick Start
 
-Add to any HTML page:
-- Script: <script src="https://cdn.jsdelivr.net/npm/cryptologo-embed@1/dist/embed.min.js"></script>
+```html
+<script src="https://cdn.jsdelivr.net/npm/cryptologo-embed@1/dist/embed.min.js"></script>
+<div data-cryptologo="entity" data-slug="example"></div>
+```
+
+## Available Widget Types (4)
+
+- entity: `data-cryptologo="entity"`
+- glossary: `data-cryptologo="glossary"`
+- logo-badge: `data-cryptologo="logo-badge"`
+- search: `data-cryptologo="search"`
+
+## Customization
+
+- **Themes**: light, dark, sepia, auto (follows system preference)
+- **Sizes**: compact (280px), default (420px), large (720px)
+- **Styles**: modern, classic
+
+```html
+<div data-cryptologo="entity" data-slug="example"
+     data-theme="auto" data-size="compact" data-style-variant="modern"></div>
+```
+
+## Integration Methods
+
+1. **Script tag** (recommended): `<script src="https://cdn.jsdelivr.net/npm/cryptologo-embed@1/dist/embed.min.js"></script>`
+2. **iframe**: `https://crypto-logo.com/iframe/entity/{slug}/`
+3. **oEmbed**: `https://crypto-logo.com/oembed?url={page_url}&format=json`
+4. **Badge**: `https://crypto-logo.com/badge/site.svg`
 
 ## Links
 
 - Main site: https://crypto-logo.com
 - Widget docs: https://widget.crypto-logo.com
-- npm: https://www.npmjs.com/package/cryptologo-embed
-- GitHub: https://github.com/dobestan/cryptologo-embed
-- API: https://crypto-logo.com/developers/
+- API documentation: https://crypto-logo.com/developers/
+- npm package: https://www.npmjs.com/package/cryptologo-embed
+- GitHub: https://github.com/fyipedia/cryptologo-embed
 
-## Standalone Widget Family
+## Standalone Widget Network
 
 - [ReadWhitepaper Widget](https://widget.readwhitepaper.com)
 - [VentureInKorea Widget](https://widget.ventureinkorea.com)
