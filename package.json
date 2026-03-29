@@ -1,0 +1,35 @@
+{
+  "name": "cryptologo-embed",
+  "version": "1.0.0",
+  "description": "Embeddable widgets for CryptoLogo — 413 cryptocurrency logos in SVG, PNG, WebP, ICO",
+  "main": "dist/embed.min.js",
+  "module": "dist/embed.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "crypto",
+    "cryptocurrency",
+    "logo",
+    "bitcoin",
+    "ethereum",
+    "svg",
+    "embed",
+    "widget",
+    "brand",
+    "crypto-logo"
+  ],
+  "author": "dobestan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dobestan/cryptologo-embed.git"
+  },
+  "homepage": "https://widget.crypto-logo.com",
+  "bugs": {
+    "url": "https://github.com/dobestan/cryptologo-embed/issues"
+  }
+}
