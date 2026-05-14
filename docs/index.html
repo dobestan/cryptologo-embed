@@ -70,7 +70,34 @@
   </style>
   <!-- WIDGET-OSS-MONITOR-PATCH-SOFTWARESOURCECODE -->
 <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":"CryptoLogo Embed Widget","url":"https://widget.crypto-logo.com","applicationCategory":"DeveloperApplication","operatingSystem":"Any (Web Browser)"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"CryptoLogo","item":"https://crypto-logo.com"},{"@type":"ListItem","position":2,"name":"Embed Widget"}]},{"@type":"SoftwareSourceCode","name":"cryptologo-embed","codeRepository":"https://github.com/dobestan/cryptologo-embed","programmingLanguage":"TypeScript","runtimePlatform":"Browser","license":"https://opensource.org/licenses/MIT"}]}
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {"@type": "WebApplication", "name": "CryptoLogo Embed Widget", "url": "https://widget.crypto-logo.com", "applicationCategory": "DeveloperApplication", "operatingSystem": "Any (Web Browser)", "description": "Embed 413 cryptocurrency logos (SVG, PNG, WebP, ICO formats) on any website. Coin cards, glossary, search, inline badges. Zero deps, Shadow DOM.", "publisher": {"@type": "Organization", "name": "CryptoLogo", "url": "https://crypto-logo.com"}, "isPartOf": {"@type": "WebSite", "name": "CryptoLogo", "url": "https://crypto-logo.com"}},
+    {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CryptoLogo", "item": "https://crypto-logo.com"}, {"@type": "ListItem", "position": 2, "name": "Embed Widget"}]},
+    {"@type": "ItemList", "name": "Top Cryptocurrency Logos", "numberOfItems": 10, "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Bitcoin (BTC)", "url": "https://crypto-logo.com/bitcoin/"},
+      {"@type": "ListItem", "position": 2, "name": "Ethereum (ETH)", "url": "https://crypto-logo.com/ethereum/"},
+      {"@type": "ListItem", "position": 3, "name": "BNB", "url": "https://crypto-logo.com/bnb/"},
+      {"@type": "ListItem", "position": 4, "name": "Solana (SOL)", "url": "https://crypto-logo.com/solana/"},
+      {"@type": "ListItem", "position": 5, "name": "XRP", "url": "https://crypto-logo.com/xrp/"},
+      {"@type": "ListItem", "position": 6, "name": "Cardano (ADA)", "url": "https://crypto-logo.com/cardano/"},
+      {"@type": "ListItem", "position": 7, "name": "Dogecoin (DOGE)", "url": "https://crypto-logo.com/dogecoin/"},
+      {"@type": "ListItem", "position": 8, "name": "Avalanche (AVAX)", "url": "https://crypto-logo.com/avalanche/"},
+      {"@type": "ListItem", "position": 9, "name": "Polkadot (DOT)", "url": "https://crypto-logo.com/polkadot/"},
+      {"@type": "ListItem", "position": 10, "name": "Chainlink (LINK)", "url": "https://crypto-logo.com/chainlink/"}
+    ]},
+    {"@type": "SoftwareSourceCode", "name": "cryptologo-embed", "codeRepository": "https://github.com/dobestan/cryptologo-embed", "programmingLanguage": "TypeScript", "runtimePlatform": "Browser", "license": "https://opensource.org/licenses/MIT"},
+    {"@type": "FAQPage", "mainEntity": [
+      {"@type": "Question", "name": "How many cryptocurrency logos does CryptoLogo provide?", "acceptedAnswer": {"@type": "Answer", "text": "413 cryptocurrency logos covering top-100 coins by market cap, major Layer-1 protocols (Bitcoin, Ethereum, Solana, Cardano, Avalanche, Polkadot, Cosmos, Algorand), DeFi tokens (UNI, AAVE, COMP, MKR, CRV, SUSHI), stablecoins (USDT, USDC, DAI, FRAX), Layer-2 scaling (Optimism, Arbitrum, zkSync, Polygon), and memecoins (DOGE, SHIB, PEPE). Each logo in 4 formats: SVG, PNG, WebP, ICO."}},
+      {"@type": "Question", "name": "Which logo formats are available?", "acceptedAnswer": {"@type": "Answer", "text": "Every coin has 4 formats: SVG (vector, infinitely scalable), PNG (transparent background, 256x256 + 512x512 + 1024x1024), WebP (compressed, ~30% smaller than PNG), ICO (favicon, 32x32 + 64x64). Direct download URLs at crypto-logo.com/<slug>/<format>/. Public domain or CC-licensed where possible."}},
+      {"@type": "Question", "name": "How do I get a coin logo URL programmatically?", "acceptedAnswer": {"@type": "Answer", "text": "REST API at https://crypto-logo.com/api/. Endpoints: GET /api/coins/ (list all 413), GET /api/coins/<slug>/ (single coin metadata), GET /api/coins/<slug>/logo/?format=svg (logo URL). No auth, CORS-enabled, no rate limit for reasonable use. OpenAPI 3.1 spec at /api/openapi.json."}},
+      {"@type": "Question", "name": "Can I use these logos commercially?", "acceptedAnswer": {"@type": "Answer", "text": "Each logo's license varies: most are public domain (Bitcoin, Ethereum, Litecoin), some Creative Commons (CC-BY, CC-BY-SA), and a few are trademarked (consult issuer). Per-coin license shown on each coin page. CryptoLogo aggregates logos but does not relicense — original terms apply."}},
+      {"@type": "Question", "name": "Is the embed widget free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, 100% free, MIT-licensed. Hosted on jsDelivr CDN (Cloudflare-backed). No API key required. Bundle is <15KB gzipped. Open source on GitHub (dobestan/cryptologo-embed) — fork freely."}},
+      {"@type": "Question", "name": "Why use the inline logo badge (logo-badge) widget type?", "acceptedAnswer": {"@type": "Answer", "text": "The logo-badge widget renders a 16x16px inline logo + coin name as a span, inheriting the surrounding text's color and size. Useful for crypto articles where you want clickable coin mentions: 'I bought some <span data-cryptologo=\"logo-badge\" data-slug=\"bitcoin\"></span> last week.' Renders inline like an emoji."}}
+    ]}
+  ]
+}
 </script>
 </head>
 <body>
@@ -133,6 +160,34 @@
           <tr><td><code>data-no-snippet</code></td><td><code>true</code></td><td>—</td></tr>
         </tbody>
       </table>
+    </section>
+
+    <section id="featured-coins">
+      <h2>Featured Cryptocurrencies</h2>
+      <p>Browse logos for the top cryptocurrencies. Each link goes to the full coin page with all 4 logo formats (SVG, PNG, WebP, ICO).</p>
+      <div class="widget-grid">
+        <div class="widget-demo"><h3><a href="https://crypto-logo.com/bitcoin/" style="color:var(--accent);text-decoration:none">Bitcoin (BTC)</a></h3><p>Original Satoshi 2008 currency. Largest cryptocurrency by market cap. Proof of Work.</p><code>data-slug="bitcoin"</code></div>
+        <div class="widget-demo"><h3><a href="https://crypto-logo.com/ethereum/" style="color:var(--accent);text-decoration:none">Ethereum (ETH)</a></h3><p>Smart contract platform. Second by market cap. Proof of Stake post-Merge.</p><code>data-slug="ethereum"</code></div>
+        <div class="widget-demo"><h3><a href="https://crypto-logo.com/bnb/" style="color:var(--accent);text-decoration:none">BNB</a></h3><p>Binance Smart Chain token. EVM-compatible. Strong DeFi ecosystem.</p><code>data-slug="bnb"</code></div>
+        <div class="widget-demo"><h3><a href="https://crypto-logo.com/solana/" style="color:var(--accent);text-decoration:none">Solana (SOL)</a></h3><p>High-throughput L1. Proof of History consensus. Sub-second finality.</p><code>data-slug="solana"</code></div>
+        <div class="widget-demo"><h3><a href="https://crypto-logo.com/xrp/" style="color:var(--accent);text-decoration:none">XRP</a></h3><p>Ripple payment protocol. Bank settlement infrastructure.</p><code>data-slug="xrp"</code></div>
+        <div class="widget-demo"><h3><a href="https://crypto-logo.com/cardano/" style="color:var(--accent);text-decoration:none">Cardano (ADA)</a></h3><p>Peer-reviewed PoS blockchain. Ouroboros consensus.</p><code>data-slug="cardano"</code></div>
+        <div class="widget-demo"><h3><a href="https://crypto-logo.com/dogecoin/" style="color:var(--accent);text-decoration:none">Dogecoin (DOGE)</a></h3><p>Memecoin turned major cryptocurrency. Litecoin fork.</p><code>data-slug="dogecoin"</code></div>
+        <div class="widget-demo"><h3><a href="https://crypto-logo.com/avalanche/" style="color:var(--accent);text-decoration:none">Avalanche (AVAX)</a></h3><p>3-chain network with Snowman consensus. Subnet architecture.</p><code>data-slug="avalanche"</code></div>
+        <div class="widget-demo"><h3><a href="https://crypto-logo.com/polkadot/" style="color:var(--accent);text-decoration:none">Polkadot (DOT)</a></h3><p>Multi-chain interoperability. Parachains + relay chain.</p><code>data-slug="polkadot"</code></div>
+        <div class="widget-demo"><h3><a href="https://crypto-logo.com/chainlink/" style="color:var(--accent);text-decoration:none">Chainlink (LINK)</a></h3><p>Decentralized oracle network. CCIP cross-chain protocol.</p><code>data-slug="chainlink"</code></div>
+      </div>
+      <p style="margin-top:16px"><a href="https://crypto-logo.com" style="color:var(--accent);font-weight:600">Browse all 413 coins on CryptoLogo →</a> · <a href="https://crypto-logo.com/glossary/" style="color:var(--accent);font-weight:600">Glossary</a> · <a href="https://crypto-logo.com/developers/" style="color:var(--accent);font-weight:600">API Docs</a></p>
+    </section>
+
+    <section id="faq">
+      <h2>FAQ</h2>
+      <details style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:12px"><summary style="cursor:pointer;font-weight:600;color:var(--text)">How many cryptocurrency logos does CryptoLogo provide?</summary><p style="margin-top:12px;font-size:0.9rem">413 logos covering top-100 by market cap, major Layer-1 protocols (<a href="https://crypto-logo.com/bitcoin/" style="color:var(--accent)">Bitcoin</a>, <a href="https://crypto-logo.com/ethereum/" style="color:var(--accent)">Ethereum</a>, <a href="https://crypto-logo.com/solana/" style="color:var(--accent)">Solana</a>, <a href="https://crypto-logo.com/cardano/" style="color:var(--accent)">Cardano</a>, <a href="https://crypto-logo.com/avalanche/" style="color:var(--accent)">Avalanche</a>, <a href="https://crypto-logo.com/polkadot/" style="color:var(--accent)">Polkadot</a>), DeFi tokens (UNI, AAVE, COMP, MKR, CRV), stablecoins (USDT, USDC, DAI, FRAX), L2 scaling (Optimism, Arbitrum, zkSync, Polygon), and memecoins (<a href="https://crypto-logo.com/dogecoin/" style="color:var(--accent)">DOGE</a>, SHIB, PEPE). Each in 4 formats.</p></details>
+      <details style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:12px"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Which logo formats are available?</summary><p style="margin-top:12px;font-size:0.9rem">Every coin has 4 formats: <strong>SVG</strong> (vector, infinitely scalable), <strong>PNG</strong> (transparent, 256/512/1024px), <strong>WebP</strong> (~30% smaller than PNG), <strong>ICO</strong> (favicon, 32/64px). Direct URLs at <code>crypto-logo.com/&lt;slug&gt;/&lt;format&gt;/</code>.</p></details>
+      <details style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:12px"><summary style="cursor:pointer;font-weight:600;color:var(--text)">How do I get a coin logo URL programmatically?</summary><p style="margin-top:12px;font-size:0.9rem">REST API at <a href="https://crypto-logo.com/api/" style="color:var(--accent)">crypto-logo.com/api/</a>. Endpoints: <code>GET /api/coins/</code> (list 413), <code>GET /api/coins/&lt;slug&gt;/</code> (metadata), <code>GET /api/coins/&lt;slug&gt;/logo/?format=svg</code>. No auth, CORS-enabled. <a href="https://crypto-logo.com/api/openapi.json" style="color:var(--accent)">OpenAPI 3.1 spec</a>.</p></details>
+      <details style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:12px"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Can I use these logos commercially?</summary><p style="margin-top:12px;font-size:0.9rem">Licensing varies per logo: most public domain (Bitcoin, Ethereum, Litecoin), some Creative Commons (CC-BY, CC-BY-SA), a few trademarked (consult issuer). Per-coin license shown on each coin page. CryptoLogo aggregates — original license terms apply.</p></details>
+      <details style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:12px"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Is the embed widget free?</summary><p style="margin-top:12px;font-size:0.9rem">Yes — 100% free, MIT-licensed. Hosted on <a href="https://cdn.jsdelivr.net/npm/cryptologo-embed/" style="color:var(--accent)">jsDelivr CDN</a>. No API key. <15KB gzipped. <a href="https://github.com/dobestan/cryptologo-embed" style="color:var(--accent)">Open source on GitHub</a> — fork freely.</p></details>
+      <details style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:12px"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Why use the inline logo-badge widget?</summary><p style="margin-top:12px;font-size:0.9rem">The <code>logo-badge</code> renders a 16×16px inline logo + coin name, inheriting the surrounding text's color/size. Perfect for crypto articles: <em>"I bought some &lt;span data-cryptologo='logo-badge' data-slug='bitcoin'&gt;&lt;/span&gt; last week."</em> Renders inline like an emoji.</p></details>
     </section>
   </div>
 
